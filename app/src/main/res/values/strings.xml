@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pizzaria</string>
+    <string name="form_user_name">Nome de usuário</string>
+    <string name="form_user_password">Senha</string>
+    <string name="credit_card">Cartão de crédito</string>
+    <string name="debit_card">Cartão de dédito</string>
+    <string name="money">Dinheiro</string>
+    <string name="end_order">Fechar pedido</string>
+</resources>

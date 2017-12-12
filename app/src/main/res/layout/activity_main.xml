@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="br.com.fiap45401.pizzaria.MainActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha o sabor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbFrango"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frango com Catupiry"
+            android:layout_weight="0.5"/>
+
+        <CheckBox
+            android:id="@+id/cbCalabresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calabresa"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbPortuguesa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Portuguesa"
+            android:layout_weight="0.5"/>
+
+        <CheckBox
+            android:id="@+id/cbQueijo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4 Queijos"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tamanho da Pizza"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgSize">
+
+        <RadioButton
+            android:id="@+id/rbPequeno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pequeno"
+            android:layout_weight="0.5"/>
+
+        <RadioButton
+            android:id="@+id/rbMedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Médio"
+            android:layout_weight="0.5"/>
+
+        <RadioButton
+            android:id="@+id/rbGrande"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grande"
+            android:layout_weight="0.5"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forma de Pagamento"/>
+    <Spinner
+        android:id="@+id/spPagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/pagamento">
+    </Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extra"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbBordaExtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Borda Extra"
+            android:layout_weight="0.5"/>
+
+        <CheckBox
+            android:id="@+id/cbRecheioExtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recheio Extra"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btFecharPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/end_order"/>
+
+</LinearLayout>
